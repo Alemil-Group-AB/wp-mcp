@@ -1,0 +1,33 @@
+{
+  "name": "wp-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for managing WordPress posts with optional AI content generation.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "wp-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node --esm src/index.ts",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [
+    "mcp",
+    "wordpress",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "eslint": "^9.15.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
